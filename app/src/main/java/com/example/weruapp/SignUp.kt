@@ -12,8 +12,15 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccountCircle
+import androidx.compose.material.icons.filled.CheckCircle
+import androidx.compose.material.icons.filled.Lock
+import androidx.compose.material.icons.filled.Phone
+import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
@@ -78,16 +85,19 @@ fun signUpDisplay(){
      ) {
 
          OutlinedTextField(value = username, onValueChange ={username},
+             leadingIcon = { Icon(Icons.Default.AccountCircle, contentDescription ="" )},
              label = { Text(text = "Username")},
              modifier = Modifier.fillMaxWidth()
          )
          Spacer(modifier = Modifier.height(20.dp))
          OutlinedTextField(value = password, onValueChange ={password},
+             leadingIcon = { Icon(Icons.Default.Lock, contentDescription ="" )},
              label = { Text(text = "password")},
              modifier = Modifier.fillMaxWidth()
          )
          Spacer(modifier = Modifier.height(20.dp))
          OutlinedTextField(value = phone, onValueChange ={phone},
+             leadingIcon = { Icon(Icons.Default.Phone, contentDescription ="" )},
              label = { Text(text = "Phone Number")},
              modifier = Modifier.fillMaxWidth()
          )

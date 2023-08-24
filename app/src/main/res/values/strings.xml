@@ -2,4 +2,5 @@
     <string name="app_name">Weruapp</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_image">ImageActivity</string>
 </resources>

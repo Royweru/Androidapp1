@@ -12,8 +12,12 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Lock
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
@@ -68,6 +72,7 @@ fun loginInterface(){
     ) {
       Text(text = "Welcome back, please login", color = Color.White, fontSize = 15.sp, fontWeight = FontWeight.Bold, fontFamily = FontFamily.Monospace)
       OutlinedTextField(value = username,
+          leadingIcon = { Icon(Icons.Default.Person, contentDescription ="usernameicon" )},
           onValueChange ={username} ,
           label = { Text(text = "Username")},
           modifier = Modifier.fillMaxWidth()
@@ -75,6 +80,7 @@ fun loginInterface(){
         Spacer(modifier = Modifier.height(10.dp))
       OutlinedTextField(value = password,
             onValueChange ={password} ,
+            leadingIcon = { Icon(Icons.Default.Lock, contentDescription ="password Icon" )},
             label = { Text(text = "password")},
             modifier = Modifier.fillMaxWidth()
         )
