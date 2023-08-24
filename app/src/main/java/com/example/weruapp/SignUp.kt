@@ -52,6 +52,9 @@ fun signUpDisplay(){
     var password by remember {
         mutableStateOf("")
     }
+    var phone by remember {
+        mutableStateOf("")
+    }
  Column(
      modifier = Modifier
          .background(color = Color.Gray)
@@ -81,6 +84,11 @@ fun signUpDisplay(){
          Spacer(modifier = Modifier.height(20.dp))
          OutlinedTextField(value = password, onValueChange ={password},
              label = { Text(text = "password")},
+             modifier = Modifier.fillMaxWidth()
+         )
+         Spacer(modifier = Modifier.height(20.dp))
+         OutlinedTextField(value = phone, onValueChange ={phone},
+             label = { Text(text = "Phone Number")},
              modifier = Modifier.fillMaxWidth()
          )
          Spacer(modifier = Modifier.height(20.dp))
