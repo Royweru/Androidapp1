@@ -3,4 +3,6 @@
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_sign_up">SignUp</string>
     <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_list_view_ex">ListViewEx</string>
+    <string name="title_activity_scrolled_list_ex">ScrolledListActivityEx</string>
 </resources>

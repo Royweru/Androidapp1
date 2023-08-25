@@ -9,6 +9,8 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -45,7 +47,9 @@ fun myImageActivity(){
   ) {
 
       Image(painter = painterResource(R.drawable.logo1), contentDescription ="logo",
-        modifier = Modifier.border(3.dp, Color.Gray)
+        modifier = Modifier.border(20.dp, Color.Gray, CircleShape)
+            .size(200.dp)
+
           )
   }
 }
