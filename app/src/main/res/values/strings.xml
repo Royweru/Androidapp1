@@ -5,4 +5,5 @@
     <string name="title_activity_image">ImageActivity</string>
     <string name="title_activity_list_view_ex">ListViewEx</string>
     <string name="title_activity_scrolled_list_ex">ScrolledListActivityEx</string>
+    <string name="title_activity_card">CardActivity</string>
 </resources>
